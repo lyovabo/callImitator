@@ -1,0 +1,17 @@
+{
+  "version": 3,
+  "file": "api.js",
+  "sourceRoot": "/Users/Mamble/Work/Bills/callImitator/client/src",
+  "sources": [
+    "api.ts"
+  ],
+  "names": [
+    "ApiService",
+    "ApiService.constructor",
+    "ApiService.onCommand"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;YAKA;gBAQIA,oBAA8BA,MAAMA;oBARxCC,iBAoCCA;oBA3BOA,MAAMA,CAACA,KAAKA,CAACA,GAAGA,IAAIA,CAACA;oBAErBA,IAAIA,CAACA,MAAMA,GAAGA,IAAIA,SAASA,CAACA,MAAMA,CAACA,GAAGA,CAACA,GAAGA,EAACA,CAACA,KAAKA,CAACA,CAACA,CAACA;oBAEpDA,IAAIA,CAACA,MAAMA,CAACA,gBAAgBA,CAACA,MAAMA,EAACA,UAACA,CAACA;wBAClCA,OAAOA,CAACA,IAAIA,CAACA,CAACA,CAACA,CAACA;oBACpBA,CAACA,CAACA,CAACA;oBACHA,IAAIA,CAACA,MAAMA,CAACA,gBAAgBA,CAACA,OAAOA,EAACA,UAACA,CAACA;wBACnCA,OAAOA,CAACA,IAAIA,CAACA,CAACA,CAACA,CAACA;oBACpBA,CAACA,CAACA,CAACA;oBACHA,IAAIA,CAACA,MAAMA,CAACA,gBAAgBA,CAACA,SAASA,EAACA,UAACA,CAACA;wBACrCA,KAAIA,CAACA,SAASA,CAACA,IAAIA,CAACA,KAAKA,CAACA,CAACA,CAACA,IAAIA,CAACA,CAACA,CAAAA;oBACtCA,CAACA,CAACA,CAACA;gBACPA,CAACA;gBAEDD,8BAASA,GAATA,UAAUA,OAAWA;oBACjBE,MAAMA,CAAAA,CAACA,OAAOA,CAACA,IAAIA,CAACA,CAAAA,CAACA;wBACjBA,KAAKA,MAAMA;4BACPA,IAAIA,CAACA,IAAIA,CAACA,UAAUA,CAACA,OAAOA,CAACA,IAAIA,CAACA,CAACA;4BACnCA,KAAKA,CAACA;wBACVA,KAAKA,cAAcA;4BACfA,OAAOA,CAACA,GAAGA,CAACA,OAAOA,CAACA,MAAMA,CAACA,CAACA;4BAC5BA,IAAIA,CAACA,IAAIA,CAACA,YAAYA,CAACA,OAAOA,CAACA,MAAMA,CAACA,CAACA;4BACvCA,KAAKA,CAACA;oBACdA,CAACA;gBACLA,CAACA;gBAhCDF;oBAACA,iBAAMA,CAACA,YAAYA,CAACA;;mBACbA,4BAAIA,UAACA;gBAEbA;oBAACA,iBAAMA;;mBAACA,4BAAIA,UAAaA;gBAL7BA;oBAACA,kBAAOA;oBAQQA,WAACA,iBAAMA,CAACA,QAAQA,CAACA,CAAAA;;+BA4BhCA;gBAADA,iBAACA;YAADA,CAACA,AApCD,IAoCC;YApCD,mCAoCC,CAAA",
+  "sourcesContent": [
+    "import {Service} from \"mangular/annotate\";\nimport {Inject} from \"mangular/annotate\";\n//import {User} from \"../models/user\";\nimport {DataService} from \"./data\"\n\n@Service\nexport class ApiService {\n    @Inject('$rootScope')\n    private root;\n    private socket:WebSocket;\n    @Inject data:DataService;\n\n\n    constructor(@Inject('config') config){\n        window['Api'] = this;\n\n        this.socket = new WebSocket(config.api.url,['wcb']);\n\n        this.socket.addEventListener(\"open\",(e)=>{\n            console.info(e);\n        });\n        this.socket.addEventListener(\"close\",(e)=>{\n            console.info(e);\n        });\n        this.socket.addEventListener(\"message\",(e)=>{\n            this.onCommand(JSON.parse(e.data))\n        });\n    }\n\n    onCommand(command:any){\n        switch(command.type){\n            case 'user' :\n                this.data.createUser(command.user);\n                break;\n            case 'statusUpdate' :\n                console.log(command.status);\n                this.data.updateStatus(command.status);\n                break;\n        }\n    }\n\n}\n\n"
+  ]
+}

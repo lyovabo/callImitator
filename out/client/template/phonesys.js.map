@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "phonesys.js",
+  "sourceRoot": "/Users/Mamble/Work/Bills/callImitator/client/src",
+  "sources": [
+    "phonesys.ts"
+  ],
+  "names": [],
+  "mappings": ";;;;YAAA,oBAAe,yxDAqCd,EAAC",
+  "sourcesContent": [
+    "export default `\n        <md-toolbar layout=\"row\" layout-align=\"center center\" class=\"sub-toolbar\" >\n            Call Imitation system\n        </md-toolbar>\n\n    <md-content layout=\"row\" layout-wrap layout-align=\"left\" >\n        <div flex=\"40\" layout-padding>\n            <md-toolbar layout=\"row\" layout-align=\"center center\" class=\"sub-toolbar\">\n                     Agents\n            </md-toolbar>\n            <md-grid-list   md-cols=\"1\" md-cols-sm=\"2\" md-cols-md=\"3\" md-cols-gt-md=\"6\"\n        md-row-height-gt-md=\"1:1\" md-row-height=\"4:3\"\n        md-gutter=\"8px\" md-gutter-gt-sm=\"4px\">\n                <md-grid-tile ng-repeat=\"agent in $ctrl.scope.users track by $index\" ng-class=\"'offline agent'\"  layout-align=\"center center\">\n                       <md-icon>person</md-icon>\n                </md-grid-tile>\n            </md-grid-list>\n        </div>\n        <div flex=\"40\" layout-padding>\n          <md-toolbar layout=\"row\" layout-align=\"center center\" class=\"sub-toolbar\">\n                     Clients\n            </md-toolbar>\n            <md-grid-list   md-cols=\"1\" md-cols-sm=\"2\" md-cols-md=\"3\" md-cols-gt-md=\"6\"\n        md-row-height-gt-md=\"1:1\" md-row-height=\"4:3\"\n        md-gutter=\"8px\" md-gutter-gt-sm=\"4px\">\n                <md-grid-tile ng-repeat=\"agent in $ctrl.scope.users track by $index\" ng-class=\"'offline agent'\"  layout-align=\"center center\">\n                       <md-icon>person</md-icon>\n                </md-grid-tile>\n            </md-grid-list>\n        </div>\n        <div flex=\"20\" layout-padding>\n            <md-toolbar layout=\"row\" layout-align=\"center center\" class=\"sub-toolbar\" >\n                    Call information\n            </md-toolbar>\n        </div>\n\n    </md-content>\n`;\n\n"
+  ]
+}

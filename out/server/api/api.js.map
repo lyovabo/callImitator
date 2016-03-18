@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "api.js",
+  "sourceRoot": "/Users/Mamble/Work/Bills/callImitator/server/src",
+  "sources": [
+    "api.ts"
+  ],
+  "names": [],
+  "mappings": "",
+  "sourcesContent": [
+    ""
+  ]
+}

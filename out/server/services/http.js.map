@@ -1,0 +1,18 @@
+{
+  "version": 3,
+  "file": "http.js",
+  "sourceRoot": "/Users/Mamble/Work/Bills/callImitator/server/src",
+  "sources": [
+    "http.ts"
+  ],
+  "names": [
+    "HttpService",
+    "HttpService.constructor",
+    "HttpService.CI",
+    "HttpService.start"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;YAMA;gBAAiCA,+BAAMA;gBAMnCA;oBACIC,mCAAmCA;oBACnCA,kBAAMA,IAAIA,CAACA,EAAEA,CAACA,MAAMA,CAACA,IAAIA,CAACA,CAACA;gBAC/BA,CAACA;gBAPDD,sBACYA,2BAAEA;yBADdA;wBAEIE,MAAMA,CAACA,iBAAQA,CAACA,QAAQA,CAACA;oBAC7BA,CAACA;;;mBAAAF;gBAKDA,2BAAKA,GAALA;oBACIG,gBAAKA,CAACA,KAAKA,WAAEA,CAACA;oBACdA,OAAOA,CAACA,IAAIA,CAACA,uBAAuBA,CAACA,CAACA;oBACtCA,OAAOA,CAACA,IAAIA,CAACA,sBAAoBA,IAAIA,CAACA,MAAMA,CAACA,IAAIA,SAAIA,IAAIA,CAACA,MAAMA,CAACA,IAAMA,CAACA,CAACA;oBACzEA,OAAOA,CAACA,IAAIA,CAACA,eAAaA,IAAIA,CAACA,MAAMA,CAACA,KAAKA,CAACA,IAAMA,CAACA,CAACA;gBACxDA,CAACA;gBAbDH;oBAACA,mBAAMA;;mBACKA,2BAAEA,QAEbA;gBAWLA,kBAACA;YAADA,CAACA,AAhBD,EAAiC,eAAM,EAgBtC;YAhBD,qCAgBC,CAAA",
+  "sourcesContent": [
+    "import {Cached} from \"common/decorators\";\nimport {Server} from \"http/server\";\n\nimport {CIServer} from \"../server\"\n\n\nexport class HttpService extends Server {\n\n    @Cached\n    private get CI():CIServer{\n        return CIServer.instance;\n    }\n    constructor(){\n        //console.log(this.CI.config.http);\n        super(this.CI.config.http);\n    }\n    start():any{\n        super.start();\n        console.info('Starting HTTP Service');\n        console.info(` remote : http://${this.config.host}:${this.config.port}`);\n        console.info(` local  : ${this.config.files.path}`);\n    }\n}"
+  ]
+}

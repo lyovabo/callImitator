@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "file": "client.js",
+  "sourceRoot": "/Users/Mamble/Work/Bills/callImitator/server/src",
+  "sources": [
+    "client.ts"
+  ],
+  "names": [],
+  "mappings": "",
+  "sourcesContent": [
+    ""
+  ]
+}

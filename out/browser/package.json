@@ -1,0 +1,29 @@
+{
+  "name": "browser",
+  "vendor": "ecmal",
+  "version": "0.0.1",
+  "registry": "github",
+  "bundle": false,
+  "libraries": {
+    "core": "0.0.1"
+  },
+  "author": {
+    "name": "Sergey Mamyan",
+    "email": "sergey.mamyan@gmail.com"
+  },
+  "commit": "c4cf7c2a04e903d4227e685fb1fdfac8dadd45ee",
+  "repository": "https://github.com/ecmal/browser.git",
+  "modules": {
+    "package": {
+      "name": "package",
+      "version": "1fdb0bf22ee7cd64b88ec245b843b1ad",
+      "files": {
+        ".d.ts": {
+          "size": 524292,
+          "hash": "1fdb0bf22ee7cd64b88ec245b843b1ad",
+          "sha": "06b431cc615c8faddd8943a33080ff20a170d95c"
+        }
+      }
+    }
+  }
+}

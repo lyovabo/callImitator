@@ -1,0 +1,207 @@
+{
+  "name": "mangular",
+  "vendor": "ecmal",
+  "version": "0.0.1",
+  "registry": "github",
+  "bundle": false,
+  "libraries": {
+    "ecmal/core": "0.0.1",
+    "ecmal/node": "0.0.1",
+    "ecmal/runtime": "0.0.2",
+    "ecmal/browser": "0.0.1"
+  },
+  "author": {
+    "name": "Grigor",
+    "email": "ggrigoryan@bills.com"
+  },
+  "commit": "e58082a0a4b25e0eb2b408e4f05b103881854c9a",
+  "repository": "https://github.com/ecmal/mangular.git",
+  "modules": {
+    "angular/angular": {
+      "name": "angular/angular",
+      "version": "ba3528b5d40fb7bcec11fe0463b3a334",
+      "size": 1127060,
+      "hash": "bcc271b51938e979421f4fa957794047",
+      "files": {
+        ".d.ts": {
+          "size": 165,
+          "hash": "ba3528b5d40fb7bcec11fe0463b3a334",
+          "sha": "0391823dedaab44641e6648f015ddbe8d13a4001"
+        },
+        ".js": {
+          "size": 1127060,
+          "hash": "bcc271b51938e979421f4fa957794047",
+          "sha": "9420e0fa3bb366faf958530d1f1b206c46ad321e"
+        }
+      }
+    },
+    "angular/animate": {
+      "name": "angular/animate",
+      "version": "ae71cfd45b8ef4617e4cd2b5bae05f88",
+      "size": 149618,
+      "hash": "42d1422e3a3e77728c5d1d0a01117075",
+      "files": {
+        ".d.ts": {
+          "size": 58,
+          "hash": "ae71cfd45b8ef4617e4cd2b5bae05f88",
+          "sha": "5268d6ca71f23229dd8be810de259c67f8a55cc9"
+        },
+        ".js": {
+          "size": 149618,
+          "hash": "42d1422e3a3e77728c5d1d0a01117075",
+          "sha": "9540569e2ec1de043ada0c949798bb702d71a027"
+        }
+      }
+    },
+    "angular/aria": {
+      "name": "angular/aria",
+      "version": "ae71cfd45b8ef4617e4cd2b5bae05f88",
+      "size": 14998,
+      "hash": "f5a5e11105af22e0e36fd98dba00db28",
+      "files": {
+        ".d.ts": {
+          "size": 58,
+          "hash": "ae71cfd45b8ef4617e4cd2b5bae05f88",
+          "sha": "5268d6ca71f23229dd8be810de259c67f8a55cc9"
+        },
+        ".js": {
+          "size": 14998,
+          "hash": "f5a5e11105af22e0e36fd98dba00db28",
+          "sha": "64c991840a07b4f59e4f6f78098f48c852e5e8e4"
+        }
+      }
+    },
+    "angular/material": {
+      "name": "angular/material",
+      "version": "ae71cfd45b8ef4617e4cd2b5bae05f88",
+      "size": 849541,
+      "hash": "308ffebd8ad47a4088d4bf8084be38b1",
+      "files": {
+        ".css": {
+          "size": 428981,
+          "hash": "46af97d920a21fe0ed5320a93fdb3bf8",
+          "sha": "97d54861bd119a2ebc94065f5762647f7a2e2726"
+        },
+        ".d.ts": {
+          "size": 58,
+          "hash": "ae71cfd45b8ef4617e4cd2b5bae05f88",
+          "sha": "5268d6ca71f23229dd8be810de259c67f8a55cc9"
+        },
+        ".js": {
+          "size": 849541,
+          "hash": "308ffebd8ad47a4088d4bf8084be38b1",
+          "sha": "2fc89c1f5bf181e34e946a2fe0ce2ee8aa6cc7bb"
+        }
+      }
+    },
+    "angular/route": {
+      "name": "angular/route",
+      "version": "ae71cfd45b8ef4617e4cd2b5bae05f88",
+      "size": 37381,
+      "hash": "811553cd40d37b4443f03c48f6cc6dfc",
+      "files": {
+        ".d.ts": {
+          "size": 58,
+          "hash": "ae71cfd45b8ef4617e4cd2b5bae05f88",
+          "sha": "5268d6ca71f23229dd8be810de259c67f8a55cc9"
+        },
+        ".js": {
+          "size": 37381,
+          "hash": "811553cd40d37b4443f03c48f6cc6dfc",
+          "sha": "9feb45aebc6f34a02d2e2445d9cc5998e9ba3f5c"
+        }
+      }
+    },
+    "angular/table": {
+      "name": "angular/table",
+      "version": "ae71cfd45b8ef4617e4cd2b5bae05f88",
+      "size": 36873,
+      "hash": "94a62d3eb1d98e8941dc864363d9fa00",
+      "files": {
+        ".css": {
+          "size": 10628,
+          "hash": "4499a440c829f1548298024157034efe",
+          "sha": "23c6592d0b95aca95a3e38e05d8c7e79aad89d77"
+        },
+        ".d.ts": {
+          "size": 58,
+          "hash": "ae71cfd45b8ef4617e4cd2b5bae05f88",
+          "sha": "5268d6ca71f23229dd8be810de259c67f8a55cc9"
+        },
+        ".js": {
+          "size": 36873,
+          "hash": "94a62d3eb1d98e8941dc864363d9fa00",
+          "sha": "0b86bf70ac868c20a23e36cfda9b90c23532ed8e"
+        }
+      }
+    },
+    "angular/ui-router": {
+      "name": "angular/ui-router",
+      "version": "ae71cfd45b8ef4617e4cd2b5bae05f88",
+      "size": 169587,
+      "hash": "9b222b8894c7fa75f75f5898f01d241d",
+      "files": {
+        ".d.ts": {
+          "size": 58,
+          "hash": "ae71cfd45b8ef4617e4cd2b5bae05f88",
+          "sha": "5268d6ca71f23229dd8be810de259c67f8a55cc9"
+        },
+        ".js": {
+          "size": 169587,
+          "hash": "9b222b8894c7fa75f75f5898f01d241d",
+          "sha": "b5a000bff957333de607855b39da05d3043bed1d"
+        }
+      }
+    },
+    "annotate": {
+      "name": "annotate",
+      "version": "24833d1e71d891a5aba3f4e9eee4bbd9",
+      "size": 7216,
+      "hash": "a6e3977bab07c0a49ba6de91d3302623",
+      "files": {
+        ".ts": {
+          "size": 4281,
+          "hash": "24833d1e71d891a5aba3f4e9eee4bbd9",
+          "sha": "a2a0c03acea3d10e87f977ac24506629a0622ebf"
+        },
+        ".js.map": {
+          "size": 11366,
+          "hash": "86082a37d5cd87a7bd33b51cf44f2209"
+        },
+        ".js": {
+          "size": 7216,
+          "hash": "a6e3977bab07c0a49ba6de91d3302623"
+        },
+        ".d.ts": {
+          "size": 741,
+          "hash": "556f1d7cc496731677564aee0f46d0cc"
+        }
+      }
+    },
+    "module": {
+      "name": "module",
+      "version": "da59aed53098fe6c8c1d9d5a894d4159",
+      "size": 19771,
+      "hash": "409b387987de9ec08928161aa71ca7bc",
+      "files": {
+        ".ts": {
+          "size": 13657,
+          "hash": "da59aed53098fe6c8c1d9d5a894d4159",
+          "sha": "d1e6d8d2f287954ab7e93559350c84865052c68a"
+        },
+        ".js.map": {
+          "size": 32997,
+          "hash": "a5f556edaa35a5e7c46410c7405d6cf5"
+        },
+        ".js": {
+          "size": 19771,
+          "hash": "409b387987de9ec08928161aa71ca7bc"
+        },
+        ".d.ts": {
+          "size": 1871,
+          "hash": "7671fc47d1e79dbf92f15fc7aee4e7c4"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "version": 3,
+  "file": "index.js",
+  "sourceRoot": "/Users/Mamble/Work/Bills/callImitator/client/src",
+  "sources": [
+    "index.ts"
+  ],
+  "names": [
+    "MyApp",
+    "MyApp.constructor",
+    "MyApp.setup",
+    "MyApp.run"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;YAcA;gBAAAA;gBA+CAC,CAACA;gBAtCUD,WAAKA,GADZA,UAEoCA,kBAAkBA,EAClBA,cAAcA,EACdA,kBAAkBA;oBAGlDE,kBAAkBA,CAACA,SAASA,CAACA,WAAWA,CAACA,CAACA;oBAC1CA,cAAcA;yBACTA,KAAKA,CAACA,UAAUA,EAACA;wBACdA,GAAGA,EAAWA,WAAWA;wBACzBA,QAAQA,EAAMA,6BAA6BA;wBAC3CA,IAAIA,EAAUA;4BACVA,KAAKA,EAAKA,UAAUA;yBACvBA;qBACJA,CAACA,CAAAA;oBAENA,IAAIA,CAACA,MAAMA,CAACA,GAAGA,CAACA,GAAGA,GAAGA,UAAQA,MAAMA,CAACA,QAAQA,CAACA,IAAIA,WAAQA,CAACA;gBAC/DA,CAACA;gBAGMF,SAAGA,GADVA,UAE0BA,SAASA,EACbA,MAAMA;oBAGxBG,OAAOA,CAACA,GAAGA,CAACA,OAAOA,CAACA,CAACA;oBACrBA,SAASA,CAACA,KAAKA,GAAGA,MAAMA,CAACA;oBACzBA,SAASA,CAACA,GAAGA,CAACA,mBAAmBA,EAAEA,UAAUA,KAAKA,EAAEA,OAAOA,EAAEA,QAAQA,EAAEA,SAASA,EAAEA,UAAUA;wBACxF,SAAS,CAAC,KAAK,GAAG,OAAO,CAAC,IAAI,CAAC,KAAK,IAAE,UAAU,CAAC;wBACjD,6EAA6E;wBAC7E,0BAA0B;wBAC1B,GAAG;wBACH,6EAA6E;wBAC7E,gCAAgC;wBAChC,GAAG;oBACP,CAAC,CAACA,CAACA;gBACPA,CAACA;gBA3CMH,YAAMA,GAAGA;oBACZA,GAAGA,EAAGA;wBACFA,GAAGA,EAAGA,sBAAsBA;qBAC/BA;iBACJA,CAACA;gBALFA;oBAACA,gBAAKA;;mBACCA,eAAMA,UAIXA;gBAEFA;oBAACA,iBAAMA;oBAEHA,WAACA,iBAAMA,CAACA,oBAAoBA,CAACA,CAAAA;oBAC7BA,WAACA,iBAAMA,CAACA,gBAAgBA,CAACA,CAAAA;oBACzBA,WAACA,iBAAMA,CAACA,oBAAoBA,CAACA,CAAAA;;;;mBAH1BA,cAAKA,QAiBXA;gBAEDA;oBAACA,cAAGA;oBAEAA,WAACA,iBAAMA,CAACA,YAAYA,CAACA,CAAAA;oBACrBA,WAACA,iBAAMA,CAACA,QAAQA,CAACA,CAAAA;;;;mBAFdA,YAAGA,QAgBTA;gBAELA,YAACA;YAADA,CAACA,AA/CD,IA+CC;YAGD,kBAAO,CAAC,KAAK,CAAC,cAAc,CAAC,CAAC",
+  "sourcesContent": [
+    "\nimport Angular from \"mangular/annotate\";\nimport {Config} from \"mangular/annotate\";\nimport {Run} from \"mangular/annotate\";\nimport {Inject} from \"mangular/annotate\";\nimport {Value} from \"mangular/annotate\";\n\nimport \"mangular/angular/material\";\nimport \"mangular/angular/ui-router\";\nimport \"mangular/angular/table\";\n\n\nimport \"./components/phonesys\";\n\nclass MyApp {\n    @Value\n    static config = {\n        api : {\n            url : 'ws://localhost:3001/'\n        }\n    };\n\n    @Config\n    static setup (\n        @Inject('$urlRouterProvider')   $urlRouterProvider,\n        @Inject('$stateProvider')       $stateProvider,\n        @Inject('$mdThemingProvider')   $mdThemingProvider\n    ){\n\n        $urlRouterProvider.otherwise('/phonesys');\n        $stateProvider\n            .state('phoneSys',{\n                url         : '/phonesys',\n                template    : `<ci-phonesys></ci-phonesys>`,\n                data        : {\n                    title   : 'phonesys'\n                }\n            })\n\n        this.config.api.url = `ws://${window.location.host}/admin`;\n    }\n\n    @Run\n    static run(\n        @Inject('$rootScope') rootScope,\n        @Inject('$state') $state\n        //@Inject api:ApiService\n    ){\n        console.log('index');\n        rootScope.title = \"None\";\n        rootScope.$on('$stateChangeStart', function (event, toState, toParams, fromState, fromParams) {\n            rootScope.title = toState.data.title||\"No Title\";\n            //if(toState.data.access == 'AUTHORIZED' &&  !rootScope.globals.currentUser){\n            //    $state.go('/login');\n            //}\n            //if(toState.data.access =='UNAUTHORIZED' &&  rootScope.globals.currentUser){\n            //    $state.go(fromState.name);\n            //}\n        });\n    }\n\n}\n\n\nAngular.start('client/index');\n\n"
+  ]
+}

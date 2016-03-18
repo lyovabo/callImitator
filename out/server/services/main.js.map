@@ -1,0 +1,26 @@
+{
+  "version": 3,
+  "file": "main.js",
+  "sourceRoot": "/Users/Mamble/Work/Bills/callImitator/server/src",
+  "sources": [
+    "main.ts"
+  ],
+  "names": [
+    "MainConnection",
+    "MainConnection.constructor",
+    "MainConnection.onCommand",
+    "MainConnection.sendCommand",
+    "MainConnection.toJSON",
+    "MainService",
+    "MainService.constructor",
+    "MainService.Server",
+    "MainService.newConnection",
+    "MainService.admins",
+    "MainService.broadcast",
+    "MainService.start"
+  ],
+  "mappings": "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",
+  "sourcesContent": [
+    "///<reference path=\"../server.ts\"/>\nimport {Cached} from \"common/decorators\";\n\nimport {WsServer} from \"http/ws/server\";\nimport {WsConnection} from \"http/ws/connection\";\n\n\n\nimport {CIServer} from \"../server\"\n\n\n\n\n\nexport class MainConnection extends WsConnection {\n\n    constructor(){\n        super(true);\n        this.on('text',(text)=>{\n            this.onCommand(JSON.parse(text));\n        });\n    }\n    onCommand(command:any){\n\n    }\n    sendCommand(command:any){\n        this.sendText(JSON.stringify(command));\n    }\n    toJSON(){\n        return {\n            id      :this.id,\n            key     :this.key,\n            hash    :this.hash,\n            headers :this.headers,\n            address :this.socket.address()\n        }\n    }\n}\n\nexport class MainService extends WsServer {\n\n    @Cached\n    private get Server():CIServer{\n        return CIServer.instance;\n    }\n    constructor(){\n        super(this.Server.http.server,'ws');\n    }\n\n    protected newConnection():WsConnection{\n        return new MainConnection();\n    }\n    protected get admins():MainConnection[]{//function that return all connections\n        return  Object.keys(this.connections).map(k=>{\n\n            return <MainConnection>this.connections[k]\n        });\n    }\n\n    public broadcast(message){// function that sends the message to connections\n        this.admins.forEach(admin=>{\n            admin.sendCommand(message);\n        })\n    }\n\n    public start(){\n        console.info('Starting ADMIN Service');\n        this.on('connect',(connection:MainConnection)=>{\n            console.info(\"CONNECT\",connection.id);\n\n        });\n        this.on('disconnect',(connection:WsConnection)=>{\n            console.info(\"DISCONNECT\",connection.id)\n        });\n\n    }\n\n}"
+  ]
+}

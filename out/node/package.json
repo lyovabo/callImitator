@@ -1,0 +1,337 @@
+{
+  "name": "node",
+  "vendor": "ecmal",
+  "version": "0.0.1",
+  "registry": "github",
+  "bundle": false,
+  "libraries": {
+    "core": "0.0.1"
+  },
+  "author": {
+    "name": "Sergey Mamyan",
+    "email": "sergey.mamyan@gmail.com"
+  },
+  "commit": "e4486cd784fc06d0e8b38a5987ac62ccc1f4d1a1",
+  "repository": "https://github.com/ecmal/node.git",
+  "modules": {
+    "assert": {
+      "name": "assert",
+      "version": "e783d672cebe49f92e1631ed2707010f",
+      "files": {
+        ".d.ts": {
+          "size": 1967,
+          "hash": "e783d672cebe49f92e1631ed2707010f",
+          "sha": "addfe9c861500d1cbae78dff8c30bf9e0969cd74"
+        }
+      }
+    },
+    "buffer": {
+      "name": "buffer",
+      "version": "0c1ab09d805c0a0d82a2036af0254404",
+      "files": {
+        ".d.ts": {
+          "size": 38,
+          "hash": "0c1ab09d805c0a0d82a2036af0254404",
+          "sha": "3abb5aa19fd0436c858a2fdaa500e6948b88820b"
+        }
+      }
+    },
+    "child_process": {
+      "name": "child_process",
+      "version": "d957a0b35f969bdbc6078961896367a7",
+      "files": {
+        ".d.ts": {
+          "size": 2761,
+          "hash": "d957a0b35f969bdbc6078961896367a7",
+          "sha": "1fbdad5a194dd9c0c7928df1867a78a0535f9a84"
+        }
+      }
+    },
+    "cluster": {
+      "name": "cluster",
+      "version": "bd4e6fa23da2ce512f80869fc9389529",
+      "files": {
+        ".d.ts": {
+          "size": 1265,
+          "hash": "bd4e6fa23da2ce512f80869fc9389529",
+          "sha": "5f35f09e17649e955a71eb40aac014f9d08fe0d6"
+        }
+      }
+    },
+    "constants": {
+      "name": "constants",
+      "version": "41648f817b0c5526265dcc6c673d5dcd",
+      "files": {
+        ".d.ts": {
+          "size": 7526,
+          "hash": "41648f817b0c5526265dcc6c673d5dcd",
+          "sha": "c4b19148b773e54be38593ba514f0f4ee03c3a8c"
+        }
+      }
+    },
+    "crypto": {
+      "name": "crypto",
+      "version": "d1f403c16c3ebc72e8c8cc37f2446f66",
+      "files": {
+        ".d.ts": {
+          "size": 3698,
+          "hash": "d1f403c16c3ebc72e8c8cc37f2446f66",
+          "sha": "159d5e32ccd824464fc61c12173cfa2f595c6814"
+        }
+      }
+    },
+    "dgram": {
+      "name": "dgram",
+      "version": "69c6e929bffbc94ef1362c56b593ce16",
+      "files": {
+        ".d.ts": {
+          "size": 907,
+          "hash": "69c6e929bffbc94ef1362c56b593ce16",
+          "sha": "02e3b36ca064da6e6d2cd5fc096321287d9f3b58"
+        }
+      }
+    },
+    "dns": {
+      "name": "dns",
+      "version": "0f78c2ca88dabfea504b6a08e8d3709c",
+      "files": {
+        ".d.ts": {
+          "size": 1308,
+          "hash": "0f78c2ca88dabfea504b6a08e8d3709c",
+          "sha": "0c0ed1cfdf2f3661f64a3950b06777c49bf96a9e"
+        }
+      }
+    },
+    "domain": {
+      "name": "domain",
+      "version": "e642e4abeea1c40f23e8d456f272314f",
+      "files": {
+        ".d.ts": {
+          "size": 637,
+          "hash": "e642e4abeea1c40f23e8d456f272314f",
+          "sha": "0edf0ce35ff321fa0373adb119a0b85ae4ed2073"
+        }
+      }
+    },
+    "events": {
+      "name": "events",
+      "version": "691b6094122a52e33abf56151fda59bf",
+      "files": {
+        ".d.ts": {
+          "size": 568,
+          "hash": "691b6094122a52e33abf56151fda59bf",
+          "sha": "b675eaa76b242596811535a458263a68712042c2"
+        }
+      }
+    },
+    "fs": {
+      "name": "fs",
+      "version": "dbab4998f634cd706243402d16a3c714",
+      "files": {
+        ".d.ts": {
+          "size": 16196,
+          "hash": "dbab4998f634cd706243402d16a3c714",
+          "sha": "3626cb43fb6ec44f84ead0124dfcb10e7cfa8b19"
+        }
+      }
+    },
+    "http": {
+      "name": "http",
+      "version": "df74e999b3a6e42c16da24b2e5822fe3",
+      "files": {
+        ".d.ts": {
+          "size": 5515,
+          "hash": "df74e999b3a6e42c16da24b2e5822fe3",
+          "sha": "64298dc670ec609d4644e2dfd6e94554a2dccd8e"
+        }
+      }
+    },
+    "https": {
+      "name": "https",
+      "version": "a2052ce2a758f7d1c53e90e76fb30418",
+      "files": {
+        ".d.ts": {
+          "size": 1217,
+          "hash": "a2052ce2a758f7d1c53e90e76fb30418",
+          "sha": "2b3dda88fd67fec0370d253db3badf7ec8b5a0e2"
+        }
+      }
+    },
+    "net": {
+      "name": "net",
+      "version": "90c1d368c11dcec75ebc4f744560d07e",
+      "files": {
+        ".d.ts": {
+          "size": 3061,
+          "hash": "90c1d368c11dcec75ebc4f744560d07e",
+          "sha": "5eef1cb8f88b8444e5fcaa41bd31132a0918b80f"
+        }
+      }
+    },
+    "os": {
+      "name": "os",
+      "version": "87864af2687c0fd9064de21f43e6a7e1",
+      "files": {
+        ".d.ts": {
+          "size": 553,
+          "hash": "87864af2687c0fd9064de21f43e6a7e1",
+          "sha": "b3f0e918172e01123e2086009e9214b2464bb0da"
+        }
+      }
+    },
+    "package": {
+      "name": "package",
+      "version": "f2a0685b6fce762f4f6a574d1b828648",
+      "files": {
+        ".d.ts": {
+          "size": 15244,
+          "hash": "f2a0685b6fce762f4f6a574d1b828648",
+          "sha": "03fc8318de57651e038d0ba4c146dfe98dd67513"
+        }
+      }
+    },
+    "path": {
+      "name": "path",
+      "version": "b4ea2440ed929d189b6b1c057c70848a",
+      "files": {
+        ".d.ts": {
+          "size": 5285,
+          "hash": "b4ea2440ed929d189b6b1c057c70848a",
+          "sha": "6ec56df05b8b96711905c9e8cbfc8da47ecf33f8"
+        }
+      }
+    },
+    "punycode": {
+      "name": "punycode",
+      "version": "c655ed06ec6c88e550b3f268dd4e8839",
+      "files": {
+        ".d.ts": {
+          "size": 398,
+          "hash": "c655ed06ec6c88e550b3f268dd4e8839",
+          "sha": "f9fd11a43c2cbc48412a52425f45e5a932b46b3b"
+        }
+      }
+    },
+    "querystring": {
+      "name": "querystring",
+      "version": "7f01714712c9b48679f5307046c69384",
+      "files": {
+        ".d.ts": {
+          "size": 296,
+          "hash": "7f01714712c9b48679f5307046c69384",
+          "sha": "b7a9e7a4377bbcd543840a2e2aee01b30976f7c1"
+        }
+      }
+    },
+    "readline": {
+      "name": "readline",
+      "version": "9c537f992d869d1ef9aa7711faab3e9d",
+      "files": {
+        ".d.ts": {
+          "size": 588,
+          "hash": "9c537f992d869d1ef9aa7711faab3e9d",
+          "sha": "03223abafbbf6e1a1ce277ed378d58a2361483c4"
+        }
+      }
+    },
+    "repl": {
+      "name": "repl",
+      "version": "f6985f46b1a4bcac573d3d0f0db36bda",
+      "files": {
+        ".d.ts": {
+          "size": 412,
+          "hash": "f6985f46b1a4bcac573d3d0f0db36bda",
+          "sha": "4d2e2a44ed948a97cf6078aa536e5ba38844e010"
+        }
+      }
+    },
+    "stream": {
+      "name": "stream",
+      "version": "931516107f5f4e29c81768e6090aa7f9",
+      "files": {
+        ".d.ts": {
+          "size": 3215,
+          "hash": "931516107f5f4e29c81768e6090aa7f9",
+          "sha": "1f26a714f454c834776529bab9c9954a8fd81893"
+        }
+      }
+    },
+    "string_decoder": {
+      "name": "string_decoder",
+      "version": "3d6a6103b40040f55a5183bd1173bec5",
+      "files": {
+        ".d.ts": {
+          "size": 209,
+          "hash": "3d6a6103b40040f55a5183bd1173bec5",
+          "sha": "47123742e1553e55702233551745c2215e6f62fa"
+        }
+      }
+    },
+    "tls": {
+      "name": "tls",
+      "version": "1441b8c237b402275935222dfe50821d",
+      "files": {
+        ".d.ts": {
+          "size": 3200,
+          "hash": "1441b8c237b402275935222dfe50821d",
+          "sha": "44ac07259f58496db2d52cd0eff9e818d08d619c"
+        }
+      }
+    },
+    "tty": {
+      "name": "tty",
+      "version": "3c094a054e76824a272c5678c1ad3330",
+      "files": {
+        ".d.ts": {
+          "size": 285,
+          "hash": "3c094a054e76824a272c5678c1ad3330",
+          "sha": "66f79178812afc9cc9c1dd929af73aa03b6e8b43"
+        }
+      }
+    },
+    "url": {
+      "name": "url",
+      "version": "3b1d8b46e06980dee95eaccce0dff8a8",
+      "files": {
+        ".d.ts": {
+          "size": 492,
+          "hash": "3b1d8b46e06980dee95eaccce0dff8a8",
+          "sha": "82f15da0b53b30bd43b1e773bfed060510e23f2f"
+        }
+      }
+    },
+    "util": {
+      "name": "util",
+      "version": "d0106f0242f2246e034992ffa84e0da2",
+      "files": {
+        ".d.ts": {
+          "size": 927,
+          "hash": "d0106f0242f2246e034992ffa84e0da2",
+          "sha": "189b522cc760c78354335f2b6aff95d1c1c83b11"
+        }
+      }
+    },
+    "vm": {
+      "name": "vm",
+      "version": "9b7d680edd4b3c8f6cb8045101228da5",
+      "files": {
+        ".d.ts": {
+          "size": 517,
+          "hash": "9b7d680edd4b3c8f6cb8045101228da5",
+          "sha": "d6f87fb1f96dedbf135c1b6e181e9df29d4d2965"
+        }
+      }
+    },
+    "zlib": {
+      "name": "zlib",
+      "version": "133ba3c21dd926ae4a0d5883ec17ed1e",
+      "files": {
+        ".d.ts": {
+          "size": 3131,
+          "hash": "133ba3c21dd926ae4a0d5883ec17ed1e",
+          "sha": "2a782706d707cc589ea4151c13f8e86ededa0f11"
+        }
+      }
+    }
+  }
+}

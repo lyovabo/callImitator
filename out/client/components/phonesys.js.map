@@ -1,0 +1,17 @@
+{
+  "version": 3,
+  "file": "phonesys.js",
+  "sourceRoot": "/Users/Mamble/Work/Bills/callImitator/client/src",
+  "sources": [
+    "phonesys.ts"
+  ],
+  "names": [
+    "phonesysComponent",
+    "phonesysComponent.constructor",
+    "phonesysComponent.refresh"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;YAMA;gBAWIA;oBACIC,IAAIA,CAACA,KAAKA,CAACA,KAAKA,GAAGA,CAACA,EAACA,EAAEA,EAACA,KAAKA,EAACA,EAACA,EAACA,EAAEA,EAACA,KAAKA,EAACA,EAACA,EAACA,EAAEA,EAACA,KAAKA,EAACA,EAACA,EAACA,EAAEA,EAACA,KAAKA,EAACA;wBAC3CA,EAACA,EAAEA,EAACA,KAAKA,EAACA,EAACA,EAACA,EAAEA,EAACA,KAAKA,EAACA,EAACA,EAACA,EAAEA,EAACA,KAAKA,EAACA,EAACA,EAACA,EAAEA,EAACA,KAAKA,EAACA;wBAC3CA,EAACA,EAAEA,EAACA,KAAKA,EAACA,EAACA,EAACA,EAAEA,EAACA,KAAKA,EAACA,EAACA,EAACA,EAAEA,EAACA,KAAKA,EAACA,EAACA,EAACA,EAAEA,EAACA,KAAKA,EAACA,CAACA,CAACA;gBAGrEA,CAACA;gBACDD,mCAAOA,GAAPA;oBACIE,OAAOA,CAACA,GAAGA,CAACA,oBAAoBA,CAACA,CAACA;oBAClCA,IAAIA,CAACA,KAAKA,CAACA,EAAEA,CAACA,IAAIA,CAACA,KAAKA,CAACA,OAAOA,EAAEA,IAAIA,CAACA,KAAKA,CAACA,MAAMA,CAACA,CAACA;gBACzDA,CAACA;gBAjBDF;oBAACA,iBAAMA,CAACA,QAAQA,CAACA;;mBACTA,oCAAKA,UAAKA;gBAClBA;oBAACA,iBAAMA,CAACA,QAAQA,CAACA;;mBACTA,oCAAKA,UAAKA;gBAClBA;oBAACA,iBAAMA,CAACA,YAAYA,CAACA;;mBACbA,mCAAIA,UAAKA;gBACjBA;oBAACA,iBAAMA;;mBAACA,mCAAIA,UAAaA;gBAV7BA;oBAACA,oBAASA,CAACA,YAAYA,EAACA;wBACpBA,QAAQA,EAAMA,kBAAQA;qBACzBA,CAACA;;sCAqBDA;gBAADA,wBAACA;YAADA,CAACA,AAvBD,IAuBC",
+  "sourcesContent": [
+    "import {Component,Inject} from \"mangular/annotate\";\nimport Template from \"../template/phonesys\";\nimport {Filter} from \"mangular/annotate\";\nimport {DataService} from \"../services/data\"\n\n\n@Component('ciPhonesys',{\n    template    : Template\n})\nclass phonesysComponent {\n    @Inject('$state')\n    private state:any;\n    @Inject('$scope')\n    private scope:any;\n    @Inject('$rootScope')\n    private root:any;\n    @Inject data:DataService;\n    constructor(){\n        this.scope.users = [{id:'aaa'},{id:'aa1'},{id:'aa2'},{id:'aa3'},\n                            {id:'aaa'},{id:'aa1'},{id:'aa2'},{id:'aa3'},\n                            {id:'aaa'},{id:'aa1'},{id:'aa2'},{id:'aa3'}];\n\n\n    }\n    refresh() {\n        console.log('refresh was called');\n        this.state.go(this.state.current, this.state.params);\n    }\n\n}\n\n"
+  ]
+}

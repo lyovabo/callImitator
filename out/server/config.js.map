@@ -1,0 +1,17 @@
+{
+  "version": 3,
+  "file": "config.js",
+  "sourceRoot": "/Users/Mamble/Work/Bills/callImitator/server/src",
+  "sources": [
+    "config.ts"
+  ],
+  "names": [
+    "Config",
+    "Config.constructor",
+    "Config.load"
+  ],
+  "mappings": ";;;;;;;;;YAEA;gBAcIA;oBAROC,SAAIA,GAAGA;wBACVA,IAAIA,EAAIA,SAASA;wBACjBA,IAAIA,EAAIA,IAAIA;wBAEZA,KAAKA,EAAGA;4BACJA,IAAIA,EAAIA,IAAIA,CAACA,OAAOA,CAACA,UAAUA,EAACA,WAAWA,CAACA;yBAC/CA;qBACJA,CAACA;oBAEEA,qBAAqBA;gBACzBA,CAACA;gBAdDD,qBAAIA,GAAJA;oBACIE,MAAMA,CAACA,OAAOA,CAACA,OAAOA,CAACA,IAAIA,CAACA,CAACA;gBACjCA,CAACA;gBAaLF,aAACA;YAADA,CAACA,AAjBD,IAiBC;YAjBD,2BAiBC,CAAA",
+  "sourcesContent": [
+    "import * as PATH from 'node/path';\n\nexport class Config {\n\n    load():Promise<Config>{\n        return Promise.resolve(this);\n    }\n\n    public http = {\n        host  : '0.0.0.0',\n        port  : 3001,\n\n        files : {\n            path :  PATH.resolve(__filename,'../../../')\n        }\n    };\n    constructor(){\n        //console.info(this);\n    }\n}"
+  ]
+}

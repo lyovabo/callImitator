@@ -1,0 +1,472 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+figure {
+    margin:0!important;
+}
+hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0;
+    background: #0C2238;
+    color: white;
+    font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+    line-height: 1.45;
+    tab-size: 2;
+    -webkit-font-smoothing: auto;
+    -webkit-text-size-adjust: none;
+    position: relative;
+    border-radius: 2px;
+    margin: 0 0 1em;
+}
+
+hljs:before {
+    content: attr(lang);
+    display: block;
+    background: #1C5792;
+    color: white;
+    line-height: 48px;
+    padding: 0 16px;
+    border-radius: 2px 2px 0 0;
+}
+
+hljs.no-header:before {
+    display: none;
+}
+
+.hljs-tag,
+.hljs-tag .hljs-title,
+.hljs-keyword,
+.hljs-literal,
+.hljs-strong,
+.hljs-change,
+.hljs-winutils,
+.hljs-flow,
+.nginx .hljs-title,
+.tex .hljs-special {
+    color: #E5C3A2;
+}
+
+hljs {
+    color: #ddd;
+}
+
+hljs .hljs-constant,
+.asciidoc .hljs-code,
+.markdown .hljs-code {
+    color: #80CBC4;
+}
+
+.hljs-code,
+.hljs-class .hljs-title,
+.hljs-header {
+    color: white;
+}
+
+.hljs-link_label,
+.hljs-attribute,
+.hljs-symbol,
+.hljs-symbol .hljs-string,
+.hljs-value,
+.hljs-params,
+.hljs-regexp {
+    color: #7DB9F4;
+}
+
+.hljs-link_url,
+.hljs-tag .hljs-value,
+.hljs-string,
+.hljs-bullet,
+.hljs-subst,
+.hljs-title,
+.hljs-emphasis,
+.hljs-type,
+.hljs-preprocessor,
+.hljs-pragma,
+.ruby .hljs-class .hljs-parent,
+.hljs-built_in,
+.django .hljs-template_tag,
+.django .hljs-variable,
+.smalltalk .hljs-class,
+.hljs-javadoc,
+.django .hljs-filter .hljs-argument,
+.smalltalk .hljs-localvars,
+.smalltalk .hljs-array,
+.hljs-attr_selector,
+.hljs-pseudo,
+.hljs-addition,
+.hljs-stream,
+.hljs-envvar,
+.apache .hljs-tag,
+.apache .hljs-cbracket,
+.tex .hljs-command,
+.hljs-prompt,
+.hljs-name {
+    color: #9ccc65;
+}
+
+.hljs-comment,
+.hljs-annotation,
+.smartquote,
+.hljs-blockquote,
+.hljs-horizontal_rule,
+.hljs-decorator,
+.hljs-pi,
+.hljs-doctype,
+.hljs-deletion,
+.hljs-shebang,
+.apache .hljs-sqbracket,
+.tex .hljs-formula {
+    color: #607D8B;
+}
+
+.coffeescript .javascript,
+.javascript .xml,
+.tex .hljs-formula,
+.xml .javascript,
+.xml .vbscript,
+.xml .css,
+.xml .hljs-cdata {
+    opacity: 0.5;
+}
+
+demo-include {
+    display: block;
+    background-color:white;
+}
+
+.colorNested .demo-content > div div  {
+    padding: 8px;
+    box-shadow: 0px 2px 5px 0 rgba(0,0,0,0.26);
+    opacity: 0.9;
+    color: white;
+    text-align: center;
+}
+
+.colorNested-noPad .demo-content > div div  {
+    box-shadow: 0px 2px 5px 0 rgba(0,0,0,0.26);
+    opacity: 0.9;
+    color: white;
+    text-align: center;
+}
+
+.colorNested .demo-content > div div:nth-child(1),
+.colorNested-noPad .demo-content > div div:nth-child(1) {
+    background-color: #009688;
+}
+.colorNested .demo-content > div div:nth-child(2),
+.colorNested-noPad .demo-content > div div:nth-child(2) {
+    background-color: #3949ab;
+}
+.colorNested .demo-content > div div:nth-child(3),
+.colorNested-noPad .demo-content > div div:nth-child(3) {
+    background-color: #9c27b0;
+}
+.colorNested .demo-content > div div:nth-child(4),
+.colorNested-noPad .demo-content > div div:nth-child(4) {
+    background-color: #8bc34a;
+}
+.colorNested .demo-content > div div:nth-child(5),
+.colorNested-noPad .demo-content > div div:nth-child(5)  {
+    background-color: #deb867;
+}
+.colorNested .demo-content > div div:nth-child(6),
+.colorNested-noPad .demo-content > div div:nth-child(6) {
+    background-color: #FF5722;
+}
+.colorNested .demo-content > div div:nth-child(7),
+.colorNested-noPad .demo-content > div div:nth-child(7)  {
+    background-color: #03A9F4;
+}
+
+.layout-content md-divider {
+    margin-top: 16px;
+}
+
+.layout-demo :not(.layout-row),
+.layout-demo :not(.layout-column) {
+    border: 1px solid #eee;
+    padding: 8px;
+}
+
+.layout-content .demo-box {
+    box-shadow: 0px 1px 3px 0 rgba(0,0,0,0.26);
+    padding: 16px;
+}
+
+.layout-panel-parent {
+    height: 200px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+[ng-panel] {
+    transition: 0.45s cubic-bezier(0.35, 0, 0.25, 1);
+    -webkit-transition: 0.45s cubic-bezier(0.35, 0, 0.25, 1);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+[ng-panel].ng-enter {
+    transform: translate3d(0, -15%, 0);
+    opacity: 0.1;
+    z-index: 1;
+}
+[ng-panel].ng-enter.ng-enter-active,
+[ng-panel].ng-leave {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+[ng-panel].ng-leave.ng-leave-active {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.5;
+}
+[ng-panel] .demo-content {
+    background: white;
+}
+@media screen and (-ms-high-contrast: active) {
+    .colorNested  > div {
+        border: 1px solid #fff !important;
+    }
+}
+
+
+html {
+    font-size: 62.5%;
+    line-height: 1.4;
+}
+body {
+    font-size: 1.6rem;
+}
+
+body {
+    overflow: hidden;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.md-api-table {
+    margin-bottom: 16px;
+    max-width: 100%;
+    width: 100%;
+    border-spacing: 0;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+/* Center the doc tool icons at the top */
+.docs-tools .md-button.md-icon-button {
+    min-height: 0;
+    height: auto;
+}
+
+#license-footer {
+    align-self: flex-end;
+    padding: 16px 32px;
+    width: 100%;
+
+    text-align: left;
+    font-size: small;
+    border-top: 1px solid #ddd;
+}
+
+/***************
+ * TYPE DEFAULTS
+ ***************/
+
+/************
+ * UTILS
+ ************/
+ul.skip-links li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul.skip-links li a {
+    background-color: #fff;
+    display: block;
+    margin: 0.5em 0 0.5em 0.5em;
+    opacity: 0;
+    left: 0;
+    position: absolute;
+    text-decoration: none;
+    top: 0;
+    width: 92%;
+    -webkit-transition: opacity   0.15s linear;
+    -moz-transition: opacity  0.15s linear;
+    transition: opacity   0.15s linear;
+}
+ul.skip-links li a:focus {
+    background-color: #fff !important;
+    opacity: 1;
+    z-index: 2;
+}
+/*******************
+ * CODE HIGHLIGHTING
+ *******************/
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+pre > code.highlight {
+    padding: 16px;
+    font-weight: 400;
+    -webkit-user-select: initial;
+    -moz-user-select: initial;
+    -ms-user-select: initial;
+    user-select: initial;
+}
+
+pre, code {
+    margin: 0;
+    padding: 0;
+    font-family: Menlo, Monaco, "Andale Mono", "lucida console", "Courier New", monospace;
+    overflow-wrap: break-word;
+}
+
+
+pre > code.highlight {
+    background-color: transparent;
+    font-weight: 400;
+    padding: 16px;
+}
+
+code {
+    font-size: 1.4rem;
+    background: rgba(0, 0, 0, 0.065);
+}
+
+code.highlight {
+    display: block;
+    overflow-wrap: break-word;
+}
+
+code:not(.highlight) {
+    color: #106CC8;
+    margin-left: 1px;
+    margin-right: 1px;
+    -webkit-font-smoothing: auto;
+    padding: 0.125em 0.35em;
+    border-radius: 2px;
+}
+.layout-content code.highlight {
+    margin-bottom: 15px;
+}
+
+/* Styles for Windows High Contrast mode */
+@media screen and (-ms-high-contrast: active) {
+    a {
+        text-decoration: underline;
+    }
+    iframe, hljs pre {
+        border: 1px solid #fff;
+    }
+}
+
+.no-transition {
+    -webkit-transition: none !important;
+    -moz-transition:    none !important;
+    -ms-transition:     none !important;
+    -o-transition:      none !important;
+    transition:         none !important;
+}
+
+table.attributes, table.md-api-table {
+    padding-left:15px;
+    margin-bottom: 20px;
+}
+table.attributes  tr  td:first-child {
+    font-weight: bold;
+    background-color: #DBEEF5;
+}
+table.attributes  tr  td:last-child {
+    padding-left: 10px;
+}
+
+table.md-api-table  tr  td:first-child {
+    font-weight: bold;
+}
+
+
+.layout_note {
+    font-size: 0.9em;
+    margin: -5px 40px 0px 20px;
+    color: rgb(1, 57, 114);
+    background-color: rgba(156, 204, 101,0.4);
+    padding: 20px;
+}
+.red {
+    color:#ff0000!important;
+}
+.sub-toolbar {
+    background-color: rgb(0, 188, 212)!important;
+    padding:0px 20px;
+}
+
+.agent {
+    border-radius:6px;
+}
+.agent md-icon {
+    width:48px;
+    height:48px;
+    font-size:48px;
+    color:#D9DCDB;
+}
+.agent.online {
+    color:#fff;
+    background-color:rgb(0, 188, 212);
+}
+.agent.online md-icon,.agent.talking md-icon {
+    color:#fff;
+}
+.agent.offline {
+    background-color:rgb(247, 247, 247);
+}
+.agent.talking {
+
+    background-color:rgb(139, 195, 74)!important;
+}

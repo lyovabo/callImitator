@@ -1,0 +1,18 @@
+{
+  "name"                       : "server",
+  "version"                    : "0.0.1",
+  "registry"                   : "github",
+  "vendor"                   : "ecmal",
+  "scripts"                    : {
+    "build"                    : "elp compile -o ../server/out",
+    "watch"                    : "elp compile -w -o ../server/out"
+  },
+  "libraries"     : {
+    "browser"     : "0.0.1",
+    "mangular"    : "0.0.1",
+    "http"        : "0.0.1",
+    "core"        : "0.0.1",
+    "node"        : "0.0.1",
+    "runtime"     : "0.0.2"
+  }
+}

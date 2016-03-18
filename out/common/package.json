@@ -1,0 +1,92 @@
+{
+  "name": "common",
+  "vendor": "ecmal",
+  "version": "0.0.1",
+  "registry": "github",
+  "bundle": false,
+  "libraries": {
+    "core": "0.0.1",
+    "node": "0.0.1",
+    "runtime": "0.0.2"
+  },
+  "author": {
+    "name": "lyovs",
+    "email": "minasyanlevon@gmail.com"
+  },
+  "commit": "b65865e0d44d172a0560c6b1a1205c2664792191",
+  "repository": "https://github.com/ecmal/common.git",
+  "modules": {
+    "decorators": {
+      "name": "decorators",
+      "version": "e291ad1414581beda79adc2cd93b13be",
+      "size": 2030,
+      "hash": "3c202062981174ff18c619bc3c78e5ed",
+      "files": {
+        ".ts": {
+          "size": 1288,
+          "hash": "e291ad1414581beda79adc2cd93b13be"
+        },
+        ".js.map": {
+          "size": 3353,
+          "hash": "6a7916282b4b4437fa2ea8b6bc18e382"
+        },
+        ".js": {
+          "size": 2030,
+          "hash": "3c202062981174ff18c619bc3c78e5ed"
+        },
+        ".d.ts": {
+          "size": 119,
+          "hash": "f6974e65ce10dfff73b64bbfd2957e05"
+        }
+      }
+    },
+    "events": {
+      "name": "events",
+      "version": "8620b8ef6899470a06ef08dd811b31c0",
+      "size": 5656,
+      "hash": "32faa74b713fce10d1a3470ab62fb634",
+      "files": {
+        ".ts": {
+          "size": 3730,
+          "hash": "8620b8ef6899470a06ef08dd811b31c0"
+        },
+        ".js.map": {
+          "size": 9148,
+          "hash": "9a783baa2b21aad69b199b271fe93879"
+        },
+        ".js": {
+          "size": 5656,
+          "hash": "32faa74b713fce10d1a3470ab62fb634"
+        },
+        ".d.ts": {
+          "size": 871,
+          "hash": "219397883bd318708fcd29290a9b045b"
+        }
+      }
+    },
+    "models": {
+      "name": "models",
+      "version": "f2ae2ce49b503e81c5d545d5d57f3073",
+      "size": 75,
+      "hash": "b3de00d211ac57d69a28a03cf9078548",
+      "files": {
+        ".ts": {
+          "size": 41,
+          "hash": "f2ae2ce49b503e81c5d545d5d57f3073"
+        },
+        ".js.map": {
+          "size": 266,
+          "hash": "23c992f75223fe9a95b0c8f9a87a0c0b"
+        },
+        ".js": {
+          "size": 75,
+          "hash": "b3de00d211ac57d69a28a03cf9078548"
+        },
+        ".d.ts": {
+          "size": 0,
+          "hash": "d41d8cd98f00b204e9800998ecf8427e"
+        }
+      }
+    }
+  }
+}

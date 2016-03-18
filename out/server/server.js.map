@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "file": "server.js",
+  "sourceRoot": "/Users/Mamble/Work/Bills/callImitator/server/src",
+  "sources": [
+    "server.ts"
+  ],
+  "names": [
+    "CIServer",
+    "CIServer.constructor",
+    "CIServer.instance",
+    "CIServer.config",
+    "CIServer.http",
+    "CIServer.main",
+    "CIServer.run"
+  ],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;;;;;;;;YAkBA;gBAAAA;gBAyBAC,CAACA;gBAxBGD,sBACWA,oBAAQA;yBADnBA;wBAEIE,MAAMA,CAACA,IAAIA,QAAQA,EAAEA,CAACA;oBAC1BA,CAACA;;;mBAAAF;gBACDA,sBACWA,4BAAMA;yBADjBA;wBAEIG,MAAMA,CAACA,IAAIA,eAAMA,EAAEA,CAACA;oBACxBA,CAACA;;;mBAAAH;gBACDA,sBACWA,0BAAIA;yBADfA;wBAEII,MAAMA,CAACA,IAAIA,kBAAWA,EAAEA,CAACA;oBAC7BA,CAACA;;;mBAAAJ;gBACDA,sBACWA,0BAAIA;yBADfA;wBAEIK,MAAMA,CAACA,IAAIA,kBAAWA,EAAEA,CAACA;oBAC7BA,CAACA;;;mBAAAL;gBAEMA,sBAAGA,GAAVA;oBAAAM,iBAMCA;oBALKA,MAAMA,CAACA,IAAIA,CAACA,MAAMA,CAACA,IAAIA,EAAEA,CAACA,IAAIA,CAACA,UAAAA,CAACA;wBACjBA,KAAIA,CAACA,IAAIA,CAACA,KAAKA,EAAEA,CAACA;wBAClBA,KAAIA,CAACA,IAAIA,CAACA,KAAKA,EAAEA,CAACA;wBAClBA,MAAMA,CAACA,KAAIA,CAACA;oBAC3BA,CAACA,CAACA,CAAAA;gBACRA,CAACA;gBAnBDN;oBAACA,mBAAMA;;mBACIA,4BAAMA,QAEhBA;gBACDA;oBAACA,mBAAMA;;mBACIA,0BAAIA,QAEdA;gBACDA;oBAACA,mBAAMA;;mBACIA,0BAAIA,QAEdA;gBAfDA;oBAACA,mBAAMA;;mBACIA,oBAAQA,QAElBA;gBAqBLA,eAACA;YAADA,CAACA,AAzBD,IAyBC;YAzBD,+BAyBC,CAAA;YACD,QAAQ,CAAC,QAAQ,CAAC,GAAG,EAAE,CAAC,IAAI,CACxB,UAAC,CAAC,IAAI,OAAO,CAAC,IAAI,CAAC,eAAe,CAAC,CAAA,CAAA,CAAC,EACpC,UAAC,CAAC,IAAI,OAAO,CAAC,IAAI,CAAC,CAAC,CAAC,KAAK,IAAE,CAAC,CAAC,CAAA,CAAA,CAAC,CAClC,CAAC;;;;AACF,mCAAmC",
+  "sourcesContent": [
+    "import {Cached} from \"common/decorators\";\nimport {Config} from \"./config\";\n\n\nimport {MainService} from \"./services/main\";\nimport {HttpService} from \"./services/http\";\n\n\nimport 'http/handlers/files';\nimport 'http/handlers/rest';\n\n\n\n\n\n\n\n\nexport class CIServer {\n    @Cached\n    static get instance():CIServer{\n        return new CIServer();\n    }\n    @Cached\n    public get config():Config {\n        return new Config();\n    }\n    @Cached\n    public get http():HttpService{\n        return new HttpService();\n    }\n    @Cached\n    public get main():MainService {\n        return new MainService();\n    }\n\n    public run():Promise<CIServer>{\n          return this.config.load().then(c=>{\n                         this.http.start();\n                         this.main.start();\n                         return this;\n          })\n    }\n}\nCIServer.instance.run().then(\n    (s)=>{console.info(\"aaaaa Started\")},\n    (e)=>{console.info(e.stack||e)}\n);\n//export default CIServer.instance;"
+  ]
+}

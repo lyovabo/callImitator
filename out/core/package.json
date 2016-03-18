@@ -1,0 +1,26 @@
+{
+  "name": "core",
+  "vendor": "ecmal",
+  "version": "0.0.1",
+  "registry": "github",
+  "bundle": false,
+  "author": {
+    "name": "Sergey Mamyan",
+    "email": "sergey.mamyan@gmail.com"
+  },
+  "commit": "f535ab1ad6105cafec5e7a97ad68c04f237a1ce0",
+  "repository": "https://github.com/ecmal/core.git",
+  "modules": {
+    "package": {
+      "name": "package",
+      "version": "0874aebb8016b54baae6bef2cc866bb9",
+      "files": {
+        ".d.ts": {
+          "size": 231951,
+          "hash": "0874aebb8016b54baae6bef2cc866bb9",
+          "sha": "c0d5538fcba109ee7335381be2c1ba5b8ff17537"
+        }
+      }
+    }
+  }
+}

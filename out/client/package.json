@@ -1,0 +1,139 @@
+{
+  "name": "client",
+  "vendor": "ecmal",
+  "version": "0.0.1",
+  "registry": "github",
+  "bundle": false,
+  "libraries": {
+    "browser": "0.0.1",
+    "mangular": "0.0.1",
+    "core": "0.0.1",
+    "runtime": "0.0.2"
+  },
+  "modules": {
+    "index": {
+      "name": "index",
+      "version": "03512421d0d36bb9eea012a944c6dd8c",
+      "size": 4437,
+      "hash": "0f028e6c25785c193d6e8c162f7337b3",
+      "files": {
+        ".html": {
+          "size": 653,
+          "hash": "5708533599574f85908fb76daec7c5db"
+        },
+        ".ts": {
+          "size": 1764,
+          "hash": "03512421d0d36bb9eea012a944c6dd8c"
+        },
+        ".js.map": {
+          "size": 3538,
+          "hash": "1b16182aacf2881761096a8db340cd92"
+        },
+        ".js": {
+          "size": 4437,
+          "hash": "0f028e6c25785c193d6e8c162f7337b3"
+        },
+        ".d.ts": {
+          "size": 0,
+          "hash": "d41d8cd98f00b204e9800998ecf8427e"
+        }
+      }
+    },
+    "components/phonesys": {
+      "name": "components/phonesys",
+      "version": "3abf1344feedeb4276751e1d97c1e569",
+      "size": 6740,
+      "hash": "acc8eca68978b7f1bada4c7e4e5b74d7",
+      "files": {
+        ".ts": {
+          "size": 4147,
+          "hash": "3abf1344feedeb4276751e1d97c1e569"
+        },
+        ".js.map": {
+          "size": 6809,
+          "hash": "dc758e1db6c6fd99b786bcb016156ac8"
+        },
+        ".js": {
+          "size": 6740,
+          "hash": "acc8eca68978b7f1bada4c7e4e5b74d7"
+        },
+        ".d.ts": {
+          "size": 0,
+          "hash": "d41d8cd98f00b204e9800998ecf8427e"
+        }
+      }
+    },
+    "services/api": {
+      "name": "services/api",
+      "version": "d2ac3998c45e37cebcaa3cd1b9d447a5",
+      "size": 3333,
+      "hash": "ebb574770eed0b17a68b4243c73a72b3",
+      "files": {
+        ".ts": {
+          "size": 1079,
+          "hash": "d2ac3998c45e37cebcaa3cd1b9d447a5"
+        },
+        ".js.map": {
+          "size": 2785,
+          "hash": "4881fa99bad0cf1e2758497c2dfd46b7"
+        },
+        ".js": {
+          "size": 3333,
+          "hash": "ebb574770eed0b17a68b4243c73a72b3"
+        },
+        ".d.ts": {
+          "size": 200,
+          "hash": "8e64174cb9fdab36006eff0fcaf49bd3"
+        }
+      }
+    },
+    "services/data": {
+      "name": "services/data",
+      "version": "f0b1ee5cf0e3be677cbe9cadd544a3e4",
+      "size": 7461,
+      "hash": "13db0620947f87290c2f574d136f64d1",
+      "files": {
+        ".ts": {
+          "size": 4240,
+          "hash": "f0b1ee5cf0e3be677cbe9cadd544a3e4"
+        },
+        ".js.map": {
+          "size": 7770,
+          "hash": "db437e62a4f7be9ece72ac443c42379f"
+        },
+        ".js": {
+          "size": 7461,
+          "hash": "13db0620947f87290c2f574d136f64d1"
+        },
+        ".d.ts": {
+          "size": 341,
+          "hash": "5afbda19bb9796a6b161c3e7d7b3547a"
+        }
+      }
+    },
+    "template/phonesys": {
+      "name": "template/phonesys",
+      "version": "b5a769cc31ae0d09360f2446f4a9d898",
+      "size": 1099,
+      "hash": "6df31fdd9c669993753a9f7a31b299ef",
+      "files": {
+        ".ts": {
+          "size": 864,
+          "hash": "b5a769cc31ae0d09360f2446f4a9d898"
+        },
+        ".js.map": {
+          "size": 1166,
+          "hash": "de705d1ba0c862d3ec06b81842d8d792"
+        },
+        ".js": {
+          "size": 1099,
+          "hash": "6df31fdd9c669993753a9f7a31b299ef"
+        },
+        ".d.ts": {
+          "size": 55,
+          "hash": "10e23ee419ce5c773587d549e87130fa"
+        }
+      }
+    }
+  }
+}
